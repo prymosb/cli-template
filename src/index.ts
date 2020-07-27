@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
 import { Argv } from "yargs";
-const chalk = require('chalk');
+import chalk = require('chalk');
 
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 require('yargs')
     .usage('$0 <cmd> args')
     .command('action', '- does something awesome', (yargs: Argv) => {
